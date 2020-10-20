@@ -1,6 +1,6 @@
 GOLANG_VERSION ?= 1.15.3
 APP_NAME ?= crypto
-PORT ?= 3000
+APP_PORT ?= 3000
 
 run:
 	go run main.go

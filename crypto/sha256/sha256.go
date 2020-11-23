@@ -40,7 +40,7 @@ func Sign(secret string, data []byte) string {
 func (s Sha256) Sign(ctx *fiber.Ctx) error {
 	secret := ctx.Get(secretKeyHeader)
 	if secret == "" {
-		return fmt.Errorf("sign is empty")
+		return fmt.Errorf("secret key header is empty")
 	}
 
 	body := ctx.Body()
